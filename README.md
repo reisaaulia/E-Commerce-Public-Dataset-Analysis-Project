@@ -1,4 +1,4 @@
-# Proyek-Analisis-E-Commerce-Public-Dataset
+# E-Commerce-Public-Dataset-Analysis Project
 
 ## Setup Environment (Bersifat opsional)
 ```
