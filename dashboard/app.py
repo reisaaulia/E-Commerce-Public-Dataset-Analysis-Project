@@ -58,7 +58,7 @@ def number_order_per_month(df):
 daily_orders_df=number_order_per_month(df_all)
 
 # ==========================
-geolocation = pd.read_csv("https://github.com/reisaaulia/E-Commerce-Public-Dataset-Analysis-Project/blob/master/dashboard/geolocation_data.csv")
+geolocation = pd.read_csv("https://raw.githubusercontent.com/reisaaulia/E-Commerce-Public-Dataset-Analysis-Project/master/dashboard/geolocation_data.csv")
 geolocation.head()
 
 data = geolocation.drop_duplicates(subset='customer_unique_id')
