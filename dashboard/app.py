@@ -9,10 +9,8 @@ import urllib
 from func import BrazilMapPlotter
 import matplotlib.image as mpimg
 
-url = "https://drive.google.com/file/d/1lRn4glI2iyxBa2jNJhPuKYViYppi0mwN/view?usp=sharing"
-file_id=url.split('/')[-2]
-dwn_url='https://drive.google.com/uc?id=' + file_id
-df_all = pd.read_csv(dwn_url)
+df_all = pd.read_csv("https://raw.githubusercontent.com/reisaaulia/E-Commerce-Public-Dataset-Analysis-Project/master/dashboard/df_all.csv")
+df_all.head()
 
 # ==========================
 def df_create_by_product(df):
@@ -60,10 +58,8 @@ def number_order_per_month(df):
 daily_orders_df=number_order_per_month(df_all)
 
 # ==========================
-url = "https://drive.google.com/file/d/13qsmSQKJnpha03HGMay28vOAwHBAq8_y/view?usp=sharing"
-file_id=url.split('/')[-2]
-dwn_url='https://drive.google.com/uc?id=' + file_id
-geolocation = pd.read_csv(dwn_url)
+geolocation = pd.read_csv("https://github.com/reisaaulia/E-Commerce-Public-Dataset-Analysis-Project/blob/master/dashboard/geolocation_data.csv")
+geolocation.head()
 
 data = geolocation.drop_duplicates(subset='customer_unique_id')
 
